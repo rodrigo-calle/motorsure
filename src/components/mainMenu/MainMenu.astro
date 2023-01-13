@@ -1,0 +1,67 @@
+---
+import MainButton from "../mainButton/MainButton.astro";
+
+---
+
+<nav class="main-menu__container">
+    <div class="logo-container">
+        <img src="https://res.cloudinary.com/dakexlsnu/image/upload/v1673569327/motorsure/image_6_r9jnho.png" alt="logo Motorsure">
+    </div>
+    <div class="options-container">
+        <ul class="option-list">
+            <a class="menu-link" href=""><li class="menu-option">Servicios</li></a>
+            <a class="menu-link"href=""><li class="menu-option">Permisos</li></a>
+            <a class="menu-link"href=""><li class="menu-option">Contacto</li></a>
+            <a class="menu-link"href=""><li class="menu-option">Nosotros</li></a>
+        </ul>
+    </div>
+    <div class="contact-btn-container">
+        <MainButton title="contáctanos"/>
+    </div>
+
+</nav>
+
+<style>
+    .main-menu__container {
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .logo-container {
+        width: 231px;
+        height: 33.39px;
+    }
+
+    .logo-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .options-container {
+        width: 568px;
+    }
+    .option-list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu-link {
+        color: #000;
+        text-decoration: none;
+    }
+    .menu-option {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+
+</style>

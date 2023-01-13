@@ -1,10 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import MainMenu from '../components/mainMenu/MainMenu.astro';
+import MainBanner from '../components/mainBanner/MainBanner.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
+<Layout title="Motorsure">
+	<header>
+		<MainMenu />
+		<MainBanner />
+	</header>
+
+	<!-- <main>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -32,11 +39,11 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-	</main>
+	</main> -->
 </Layout>
 
 <style>
-	main {
+	/* main {
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
@@ -77,5 +84,5 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
-	}
+	} */
 </style>

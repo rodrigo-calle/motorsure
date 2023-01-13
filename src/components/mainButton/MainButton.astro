@@ -1,0 +1,26 @@
+---
+export interface Props {
+    title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<button class="main-button">
+    {title.toUpperCase()}
+</button>
+<style>
+    .main-button {
+        background-color: #9FC5E8;
+        color: #fff;
+        text-align: center;
+        width: 251px;
+        height: 61px;
+        border: none;
+        border-radius: 9px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }       
+    
+</style>

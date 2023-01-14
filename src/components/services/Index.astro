@@ -1,0 +1,47 @@
+---
+import ServiceCard from "./serviceCard/ServiceCard.astro";
+
+---
+
+<div class="service-container">
+    <h1 class="service-container-title">Nuestros Servicios</h1>
+    <div class="service-cards-container">
+        <ServiceCard 
+            image="https://res.cloudinary.com/dakexlsnu/image/upload/v1673665464/motorsure/worker-loading-boxes_2_lu1p4l.png" 
+            title="Recolección y Transporte de Residuos Biocontaminados"
+        />
+        <ServiceCard 
+            image="https://res.cloudinary.com/dakexlsnu/image/upload/v1673665480/motorsure/delivery-box-package-opened-with-up-arrow_2_tgat6t.png" 
+            title="Recolección y Transporte de Residuos Industriales"
+        />
+    </div>
+</div>
+
+<style>
+    .service-container {
+        width: 100%;
+        margin-top: 945px;
+        /* padding: 20px 0px; */
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .service-container-title {
+        width: 85%;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        margin-top: 0px;
+    }
+
+    .service-cards-container {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+</style>

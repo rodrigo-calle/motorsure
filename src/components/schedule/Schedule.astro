@@ -1,0 +1,47 @@
+---
+import MainButton from "../mainButton/MainButton.astro";
+
+---
+
+<div class="schedule-container">
+    <h1 class="title">Atendemos <span class="date-text">24/7</span></h1>
+    <div class="shedule-description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    </div>
+    <div class="button-container">
+        <MainButton title="Contáctanos"/>
+    </div>
+</div>
+
+<style>
+    .schedule-container {
+        height: 368px;
+        width: 100%;
+        background-color: #255D8F;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .title {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        margin: 0px;
+    }
+    .date-text {
+        color: #FEC704;
+    }
+
+    .shedule-description {
+        width: 963px;
+        color: #fff;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0;
+        font-weight: 400;
+        text-align: center;
+    }
+</style>

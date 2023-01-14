@@ -3,6 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import MainMenu from '../components/mainMenu/MainMenu.astro';
 import MainBanner from '../components/mainBanner/MainBanner.astro';
+import Index from '../components/services/Index.astro';
+import Schedule from '../components/schedule/Schedule.astro';
+import About from '../components/about/About.astro';
+import Sentence from '../components/sentence/Sentence.astro';
+import Permissions from '../components/permissions/Permissions.astro';
 ---
 
 <Layout title="Motorsure">
@@ -10,6 +15,14 @@ import MainBanner from '../components/mainBanner/MainBanner.astro';
 		<MainMenu />
 		<MainBanner />
 	</header>
+	<main>
+		<Index />
+		<Schedule />
+		<About />
+		<Sentence />
+		<Permissions />
+		<div class="separator-line" />
+	</main>
 
 	<!-- <main>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
@@ -43,6 +56,21 @@ import MainBanner from '../components/mainBanner/MainBanner.astro';
 </Layout>
 
 <style>
+	html {
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.separator-line {
+		background-color: #9FC5E8;
+		width: 100%;
+		height: 6px;
+	}
 	/* main {
 		margin: auto;
 		padding: 1.5rem;

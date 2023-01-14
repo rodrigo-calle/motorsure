@@ -8,6 +8,9 @@ import Schedule from '../components/schedule/Schedule.astro';
 import About from '../components/about/About.astro';
 import Sentence from '../components/sentence/Sentence.astro';
 import Permissions from '../components/permissions/Permissions.astro';
+import Contact from '../components/contact/Contact.astro';
+import Maps from '../components/maps/Maps.astro';
+import Footer from '../components/footer/Footer.astro';
 ---
 
 <Layout title="Motorsure">
@@ -22,7 +25,12 @@ import Permissions from '../components/permissions/Permissions.astro';
 		<Sentence />
 		<Permissions />
 		<div class="separator-line" />
+		<Contact />
+		<Maps />
 	</main>
+	<footer>
+		<Footer />
+	</footer>
 
 	<!-- <main>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
@@ -56,7 +64,7 @@ import Permissions from '../components/permissions/Permissions.astro';
 </Layout>
 
 <style>
-	html {
+	body {
 		margin: 0;
 		padding: 0;
 	}

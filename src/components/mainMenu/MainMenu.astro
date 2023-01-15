@@ -64,7 +64,7 @@ import MainButton from "../mainButton/MainButton.astro";
         line-height: 29px;
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1280px) {
         .main-menu__container {
             height: 128px;
         }
@@ -80,6 +80,24 @@ import MainButton from "../mainButton/MainButton.astro";
         .options-container {
             width: 461px;
         }
+    }
+
+    @media only screen and (max-width: 1040px) {
+
+        .main-menu__container {
+            height: 140px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .options-container {
+            width: 430px;
+        }
+
     }
 
     @media only screen and (max-width: 500px) {

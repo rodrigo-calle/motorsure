@@ -26,18 +26,21 @@ const { title } = Astro.props;
     @media only screen and (max-width: 1024px) {
         
         .main-button {
-            background-color: #9FC5E8;
-            color: #fff;
-            text-align: center;
             width: 174px;
             height: 51px;
-            border: none;
             border-radius: 9px;
             font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
         }  
     
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .main-button {
+            width: 91px;
+            height: 27px;
+            border-radius: 9px;
+            font-size: 8px;
+        }  
     }
     
 </style>

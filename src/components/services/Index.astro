@@ -57,4 +57,21 @@ import ServiceCard from "./serviceCard/ServiceCard.astro";
             margin: 0;
         }
     }
+    @media only screen and (max-width: 500px) { 
+        .service-container {
+            width: 100%;
+            margin-top: 285px;
+            height: 640px;
+        }
+        .service-container-title {
+            font-size: 24px;
+            line-height: 27px;
+            margin: 0;
+        }
+        .service-cards-container {
+            flex-direction: column;
+            height: 500px;
+            justify-content: space-between;
+         }
+    }
 </style>

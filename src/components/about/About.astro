@@ -87,7 +87,6 @@
     @media only screen and (max-width: 1024px) {
         .about-container {
             height: 560px;
-
         }
 
         .description-title{
@@ -98,11 +97,43 @@
         .description-text {
             font-size: 22px;
             line-height: 27px;
+            height: 200px;
         }
 
         .description-sentence {
             font-size: 20px;
         }
     }
+
+    @media only screen and (max-width: 500px) {
+        .about-container {
+            height: 300px;
+        }
+        .image-container {
+            width: 0;
+            display: none;
+        }
+        .content-container {
+            height: 300px;
+        }
+        .description-container {
+            width: 100%;
+            height: 200px;
+        }
+        .description-title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .description-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .description-sentence {
+            font-size: 12px;
+            left: 19px;
+        }
+    }
+
 
 </style>

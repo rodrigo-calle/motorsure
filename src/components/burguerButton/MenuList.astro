@@ -1,0 +1,69 @@
+<div class="list-menu-container" id="menu-list" style="display: none;">
+    <ul class="list-menu">
+        <a href="#services" class="link-option">
+            <li class="option-text">
+                Servicios
+            </li>
+        </a>
+        <a href="#permissions" class="link-option">
+            <li class="option-text">
+                Permisos
+            </li>
+        </a>
+        <a href="#contact" class="link-option">
+            <li class="option-text">
+                Contacto
+            </li>
+        </a>
+        <a href="#about-us" class="link-option">
+            <li class="option-text">
+                Nosotros
+            </li>
+        </a>
+    </ul>
+</div>
+
+<style>
+    /* .list-menu-container {
+        display: none;
+    } */
+
+    @media only screen and (max-width: 800px) {
+        .list-menu-container {
+            display: flex;
+            position: fixed;
+            height: 100vh;
+            background-color: #fff;
+            width: 60%;
+            z-index: 20;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .list-menu {
+            list-style: none;
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+        }
+
+        .link-option {
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .option-text {
+            width: 100%;
+            color: #255D8F;
+            font-weight: 700;
+        }
+
+
+    }
+
+</style>

@@ -10,6 +10,7 @@
         box-shadow: 10px 5px 5px black;
         position: fixed;
         left: 70px;
+        bottom: 80px;
         width: 94px;
         height: 94px;
         background-color: #fff;
@@ -17,8 +18,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
-        bottom: 80px;
+        border-radius: 50%;    
         z-index: 100;
         cursor: pointer;
     }
@@ -26,5 +26,14 @@
     .phone-button-container img {
         height: 80%;
         width: 80%;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .phone-button-container {
+            width: 72px;
+            height: 72px;
+            left: 30px;
+            bottom: 50px;
+        }
     }
 </style>

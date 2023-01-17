@@ -5,10 +5,12 @@ export interface Props {
 
 const { title } = Astro.props;
 ---
+<a href="tel:947609185">
+    <button class="main-button">
+        {title.toUpperCase()}
+    </button>
+</a>
 
-<button class="main-button">
-    {title.toUpperCase()}
-</button>
 <style>
     .main-button {
         background-color: #9FC5E8;
